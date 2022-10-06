@@ -16,8 +16,8 @@ int main(){
 		sort(step.begin(),step.end());
 		for(long long int i=0;i<=n;i++){
 			for(long long int j=0;j<m;j++){
-				if(i>=step[j]&&stanwin[i-step[j]]==0){
-					stanwin[i]=1;
+				if(i>=step[j]&&stanwin[i-step[j]]==false){
+					stanwin[i]=true;
 				}
 			}
 		}

@@ -5,10 +5,12 @@
 using namespace std;
 
 int main(){
+	cin.tie(0);
+	cin.sync_with_stdio(0);
 	long long int n;
 	while(cin>>n){
 		if(n==0){
-			continue;
+			break;
 		}
 		map<long long int,long long int> mp;
 		vector<long long int> v(5);
